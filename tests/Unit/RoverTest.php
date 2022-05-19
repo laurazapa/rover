@@ -139,7 +139,7 @@ class RoverTest extends TestCase
         $this->assertEquals($expected, $result);
     }
 
-    public function test_rover_only_accepts_right_inputs()
+    public function test_rover_only_accepts_correct_inputs()
     {
         $result = Rover::execute('AAA', 'N', 0, 0);
         $expected = 'Wrong command input. Must be either R, L or F.';
