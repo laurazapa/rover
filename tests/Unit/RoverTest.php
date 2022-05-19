@@ -131,11 +131,11 @@ class RoverTest extends TestCase
     public function test_rover_stops_before_obstacle()
     {
         $result = Rover::execute('F', 'N', 8, 7);
-        $expected = '8:7:N';
+        $expected = 'Obstacle detected at position 8:8. Last position reached 8:7:N';
         $this->assertEquals($expected, $result);
 
         $result = Rover::execute('FRFFFF', 'N', 8, 7);
-        $expected = '8:7:N';
+        $expected = 'Obstacle detected at position 8:8. Last position reached 8:7:N';
         $this->assertEquals($expected, $result);
     }
 
