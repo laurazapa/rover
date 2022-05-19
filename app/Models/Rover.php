@@ -8,19 +8,6 @@ use App\Models\Direction;
 use App\Models\Surface; 
 use App\Models\Coordinate; 
 
-
-
-/* COSES A MILLORAR
-
-- que es pugui posar starting position
-IMPORTANT:
-- repassar readme
-- provar tests i que funcionin
-
-. pujar projecte a real, mirar que es veu be readme. Descarregarlo de nou i comprovar que tot funciona!!!!!
-
-*/
-
 class Rover extends Model
 {
     use HasFactory;
